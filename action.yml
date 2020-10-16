@@ -1,5 +1,9 @@
 name: 'Garden EKS Deploy Action'
 description: 'Configures Garden and AWS credentials for doing Deployments'
+inputs:
+  ssh_key:  # id of input
+    description: 'ssh key'
+    required: true
 branding:
   icon: 'box'
   color: 'gray-dark'
