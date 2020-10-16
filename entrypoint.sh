@@ -2,7 +2,7 @@
 
 set -xe
 sh -c "mkdir -p /root/.ssh"
-echo ${INPUT_SSH_KEY} > /root/.ssh/id_rsa
+sh -c "echo ${INPUT_SSH_KEY} > /root/.ssh/id_rsa"
 sh -c "chmod 600 /root/.ssh/id_rsa"
 sh -c "ssh-keyscan github.com >> /root/.ssh/known_hosts"
 sh -c "chmod 700 /root/.ssh/"
